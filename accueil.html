@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+    <title>DEVFLIX</title>
+</head>
+
+<body>
+
+    <!--Barre de navigation-->
+
+    <nav class="navbar navbar-expand-lg navbar-dark  ">
+
+        <div class="container-fluid police_netflix fixed-top background_nav  ">
+            <a class="navbar-brand text-white" href="accueil.html"><img src="assets/img/logo.png"></a>
+            <button class="navbar-toggler bg-danger" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item me-3">
+                        <a class="nav-link active text-white" aria-current="page" href="accueil.html">Accueil</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link active text-white" aria-current="page"
+                            href="accueil.html#formations">Formations</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link active text-white" aria-current="page"
+                            href="accueil.html#experiences">Experiences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page"
+                            href="accueil.html#competence">Compétences</a>
+                    </li>
+                </ul>
+
+                <!--Menu profil-->
+                <form class="d-flex me-2">
+                    <ul clas="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="assets/img/avatar_minia.png" alt="ma photo de profil" title="Daurel thomas"
+                                    class="rounded-3">
+                            </a>
+                            <ul class="dropdown-menu bg-dark opacity-50" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item text-white" href="cv papier/cv_version_black.pdf"
+                                        download="CV version black">CV papier</a></li>
+                                <li><a class="dropdown-item text-white" href="https://github.com/mansonboy">GitHub</a>
+                                </li>
+                                <li><a class="dropdown-item text-white"
+                                        href="https://www.linkedin.com/in/thomas-daurel-09437b236/">Linkedin</a></li>
+                                <li><a class="dropdown-item text-white"
+                                        href="mailto:mrdaurelthomas@gmail.com">Contact</a></li>
+                                <li><a class="dropdown-item text-white" href="tel:+33650138713"> Téléphone</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--Présentation Header-->
+    <header >
+        <div class="col-12 sm-6 mt-5">
+            <p class="ms-5 mt-5"><img src="assets/img/logo_header.png"></p>
+            <pre class="text-white ms-3  police_netflix fs-6">
+Je m'apelle Daurel Thomas, Développeur Web junior,
+vous pourrez y retrouver ici mes informations, mes projets,
+mes compétences ainsi que mes différentes expériences.
+Bonne visite et hésiter pas à me contacter
+            </pre>
+
+            <!--Bouton modale plus d'infos-->
+
+            <button type="button" class="btn btn-secondary ms-3" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+                &#9432; Plus D'infos
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header bg-dark text-danger">
+                            <h5 class="modal-title" id="exampleModalLabel">Daurel Thomas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body bg-dark text-white">
+                            <p>
+                                Après une expérience de 12 ans dans le monde de l'industrie j'ai décidé de me
+                                reconvertir
+                                dans un domaine qui m'attire, me passionne et où je pourrai exprimer ma créativité : le
+                                développement Web<br>
+                                Mon expérience en industrie m’a permis d'acquérir énormément de choses qui me sont
+                                bénéfiques également dans le domaine du Développement Web, comme le travail aussi bien
+                                en
+                                équipe que solo, m'adapter à chaque situation en y trouvant une solution et la
+                                rigueur.<br>
+                                Mon temps en dehors du travail je le consacre à l'informatique, les jeux videos, le
+                                cinéma
+                            </p>
+                        </div>
+                        <div class="modal-footer bg-dark">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                            <button type="button" class="btn btn-primary"><a class="text-white"
+                                    href="cv papier/cv_version_black.pdf" download="CV version black">CV
+                                    Papier</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--section 1 : Formation/ecole -->
+    <section class="d-none d-sm-block d-md-block" >
+        <h2 class="text-white ms-5 mt-5 " id="formations">Formations </h2>
+        <div class=" row">
+
+            <!--Colonne 1 la manu-->
+            <div class="col  ms-5">
+                <img src="assets/img/la_manu.png" alt="logo la manu" title="formation developpeur web la manu"
+                    class="rounded-3 ">
+                <h4 class="text-danger ms-4 ">Mars 2022 - En cour</h4>
+
+                <!--Bouton modale développeur web-->
+                <p class="text-white ms-4">Développeur Web
+                    <button type="button" class="btn btn-secondary fs-6 ms-2" data-bs-toggle="modal"
+                        data-bs-target="#la_manu">
+                        +
+                    </button>
+
+                    <!-- Modal -->
+                <div class="modal fade" id="la_manu" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header bg-dark text-white">
+                                <h5 class="modal-title text-danger" id="exampleModalLabel">Développeur Web et Mobile
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body bg-dark text-white">
+                                <p class="text-center fw-bold">Mars 2022 - En cours</p>
+                                <p class="text-center fst-italic">Formation pour apprendre à maitriser les languages de
+                                    programmation et outils pour créer des sites web.</p>
+                            </div>
+                            <div class="modal-footer bg-dark text-white">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </p>
+            </div>
+
+            <!--colonne 2 matra-->
+            <div class="col ms-2">
+                <img src="assets/img/matra.png" alt="logo matra" title="formation cableur matra" class="rounded-3">
+                <h4 class="text-danger ms-4 ">Mars 2021 - Juin 2021</h4>
+
+                <!--Bouton modale développeur web-->
+                <p class="text-white ms-4">Cableur électronique
+                    <button type="button" class="btn btn-secondary fs-6 ms-2" data-bs-toggle="modal"
+                        data-bs-target="#matra">
+                        +
+                    </button>
+
+                    <!-- Modal -->
+                <div class="modal fade" id="matra" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header bg-dark">
+                                <h5 class="modal-title text-danger" id="exampleModalLabel">Cableur électronique</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body bg-dark text-white">
+                                <p class="text-center fw-bold">Mars 2021 - Juin 2021</p>
+                                <p class="text-center fst-italic">Apprentisage des bases de la brassure de micro
+                                    composant, réalisation d'ordre de fabrication du début à la fin</p>
+                            </div>
+                            <div class="modal-footer bg-dark">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </p>
+            </div>
+
+            <!--Colonne 3 st joseph-->
+            <div class="col  ms-2">
+                <img src="assets/img/lycée.png" alt="lycée saint joseph de cluny"
+                    title="Cap Vente Lycée saitn jospeh de cluny" class="rounded-3">
+                <h4 class="text-danger">Septembre 2005-Juillet 2006</h4>
+
+                <!--Bouton modale développeur web-->
+                <p class="text-white ms-4">Cap Vente
+                    <button type="button" class="btn btn-secondary fs-6 ms-2" data-bs-toggle="modal"
+                        data-bs-target="#cap">
+                        +
+                    </button>
+
+                    <!-- Modal -->
+                <div class="modal fade" id="cap" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header bg-dark">
+                                <h5 class="modal-title text-danger" id="exampleModalLabel">Cap Vente</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body bg-dark text-white">
+                                <p class="text-center fw-bold">Septembre 2005 - Juillet 2006</p>
+                                <p class="text-center fst-italic">Cap vente</p>
+                            </div>
+                            <div class="modal-footer bg-dark">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </p>
+
+            </div>
+
+            <div class="col">
+
+            </div>
+        </div>
+    </section>
+
+
+    <!--Section 1 Carouselle-->
+
+    <div class="row d-lg-none">
+        <br>
+        <h2 class="text-danger text-center">Formation</h2>
+        <div class="offset-2 col-8">
+            <!-- Carousel -->
+            <div id="section1" class="carousel slide" data-bs-ride="carousel">
+
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#section1" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#section1" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#section1" data-bs-slide-to="2"></button>
+                </div>
+
+
+                <div class="carousel-inner ">
+                    <div class="carousel-item active">
+                        <p class="text-white text-center">Développeur Web </p>
+                        <img src="assets/img/la_manu.png" alt="Los Angeles" class="d-block w-100 redim">
+
+                    </div>
+                    <div class="carousel-item">
+                        <p class="text-white text-center">Cableur électronique</p>
+                        <img src="assets/img/matra.png" alt="Chicago" class="d-block w-100 redim">
+                    </div>
+                    <div class="carousel-item">
+                        <p class="text-white text-center">Cap Vente</p>
+                        <img src="assets/img/lycée.png" alt="New York" class="d-block w-100 redim">
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#section1" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#section1" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!--Fin Section 1 carouselle-->
+
+
+
+
+    <!--Section 2 : Experience-->
+    <section class="d-none d-sm-block d-md-block" >
+        <h2 class="text-white ms-5 mt-5" id="experiences">Experiences</h2>
+        <div class=" row">
+
+            <!--Experience matra -->
+            <div class="col  ms-5">
+                <img src="assets/img/matra.png" alt="logo matra" title="Cableur electronique" class="rounded-3">
+                <h4 class="text-danger ms-4 ">Mars 2021 - Février 2022</h4>
+
+                <!--Bouton modale Matra-->
+                <p class="text-white ms-4">Cableur électronique
+                    <button type="button" class="btn btn-secondary fs-6 ms-2" data-bs-toggle="modal"
+                        data-bs-target="#tmatra">
+                        +
+                    </button>
+
+                    <!-- Modal -->
+                <div class="modal fade" id="tmatra" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header bg-dark text-white">
+                                <h5 class="modal-title text-danger" id="exampleModalLabel">Cableur electronique
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body bg-dark text-white">
+                                <p class="text-center fw-bold">Mars 2021 - Janvier 2022</p>
+                                <p class="text-center fst-italic">Réalisation de cablages et cartes<br>
+                                    Suivre un ordre de fabrication <br>
+                                    Brasage de micro composant<br>
+                                    dénudage, sertissage, boudinette
+                                </p>
+                            </div>
+                            <div class="modal-footer bg-dark text-white">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </p>
+            </div>
+
+            <!--Experience Bostik-->
+            <div class="col  ms-2">
+                <img src="assets/img/bostik.png" alt="logo matra" title="Cableur electronique" class="rounded-3">
+                <h4 class="text-danger ">Janvier 2020-Decembre 2020</h4>
+
+                <!--Bouton modale développeur web-->
+                <p class="text-white ms-4">Conducteur de ligne
+                    <button type="button" class="btn btn-secondary fs-6 ms-2" data-bs-toggle="modal"
+                        data-bs-target="#bostik">
+                        +
+                    </button>
+
+                    <!-- Modal -->
+                <div class="modal fade" id="bostik" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header bg-dark text-white">
+                                <h5 class="modal-title text-danger" id="exampleModalLabel">Conducteur de ligne
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body bg-dark text-white">
+                                <p class="text-center fw-bold">Janvier 2020-Decembre 2020</p>
+                                <p class="text-center fst-italic">
+                                    Conduite de ligne sur installation chimique <br>
+                                    Conduite CACES 3<br>
+                                    Première maintenance
+                                </p>
+                            </div>
+                            <div class="modal-footer bg-dark text-white">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </p>
+            </div>
+
+            <!--Experience Unilevers-->
+            <div class="col  ms-2">
+                <img src="assets/img/unilerver.png" alt="logo matra" title="Cableur electronique" class="rounded-3">
+                <h4 class="text-danger ms-2 ">Juin 2018 - Décembre 2019</h4>
+
+                <!--Bouton modale développeur web-->
+                <p class="text-white ms-4">Conducteur de ligne
+                    <button type="button" class="btn btn-secondary fs-6 ms-2" data-bs-toggle="modal"
+                        data-bs-target="#unilever">
+                        +
+                    </button>
+
+                    <!-- Modal -->
+                <div class="modal fade" id="unilever" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header bg-dark text-white">
+                                <h5 class="modal-title text-danger" id="exampleModalLabel">Conducteur de ligne
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body bg-dark text-white">
+                                <p class="text-center fw-bold">Juin 2018 - Décembre 2019</p>
+                                <p class="text-center fst-italic">
+                                    Conduite CACES 3<br>
+                                    Informatique<br>
+                                    Conduite de ligne<br>
+                                </p>
+                            </div>
+                            <div class="modal-footer bg-dark text-white">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </p>
+            </div>
+
+
+            <!--PQ france-->
+            <div class="col  ms-2">
+                <img src="assets/img/pq.png" alt="logo matra" title="Cableur electronique" class="rounded-3">
+                <h4 class="text-danger ms-1 ">Novembre 2017 - Juin 2018</h4>
+
+                <!--Bouton modale développeur web-->
+                <p class="text-white ms-4">Conducteur de ligne
+                    <button type="button" class="btn btn-secondary fs-6 ms-2" data-bs-toggle="modal"
+                        data-bs-target="#pq">
+                        +
+                    </button>
+
+                    <!-- Modal -->
+                <div class="modal fade" id="pq" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header bg-dark text-white">
+                                <h5 class="modal-title text-danger" id="exampleModalLabel">Conducteur de ligne
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body bg-dark text-white">
+                                <p class="text-center fw-bold">Novembre 2017 - Juin 2018</p>
+                                <p class="text-center fst-italic">
+                                    Conduite de ligne chimique<br>
+                                    Conduite CACES 3<br>
+                                </p>
+                            </div>
+                            <div class="modal-footer bg-dark text-white">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Section 2 carouselle-->
+
+
+    <div class="row d-lg-none">
+        <br>
+        <h2 class="text-danger text-center">Experience</h2>
+        <div class="offset-2 col-8">
+            <!-- Carousel -->
+            <div id="section2" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#section2" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#section2" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#section2" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#section2" data-bs-slide-to="3"></button>
+                </div>
+
+                <div class="carousel-inner ">
+                    <div class="carousel-item active">
+                        <p class="text-white text-center">Cableur électronique</p>
+                        <img src="assets/img/matra.png" alt="Los Angeles" class="d-block w-100 redim">
+
+                    </div>
+                    <div class="carousel-item">
+                        <p class="text-white text-center">Conducteur d'installation</p>
+                        <img src="assets/img/bostik.png" alt="Chicago" class="d-block w-100 redim">
+                    </div>
+                    <div class="carousel-item">
+                        <p class="text-white text-center">Conducteur de ligne</p>
+                        <img src="assets/img/unilerver.png" alt="New York" class="d-block w-100 redim">
+                    </div>
+                    <div class="carousel-item">
+                        <p class="text-white text-center">Conducteur d'installation</p>
+                        <img src="assets/img/pq.png" alt="New York" class="d-block w-100 redim">
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#section2" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#section2" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!--Fin section 2 carouselle-->
+
+
+
+    <!--section 3 : Competence-->
+    <section class="d-none d-sm-block d-md-block" >
+        <h2 class="text-white ms-5 mt-5" id="competence">Competence</h2>
+        <div class=" row">
+
+            <!--Html Css -->
+            <div class="col  ms-5">
+                <img src="assets/img/html.png" alt="Html/css" title="logo representant html et css" class="rounded-3">
+                <div class="progress barre_chargement">
+                    <div class=" bg-danger progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
+                </div>
+            </div>
+
+            <!--Bootstrap-->
+            <div class="col  ms-2">
+                <img src="assets/img/bootstrap.png" alt="logo bootstrap" title="Le logo de bootstrap en violet"
+                    class="rounded-3">
+                <div class="progress barre_chargement">
+                    <div class=" bg-danger progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
+                </div>
+            </div>
+
+            <!--Javascript-->
+            <div class="col  ms-2">
+                <img src="assets/img/javascript.png" alt="logo javascript" title="logo javascript en jaune"
+                    class="rounded-3">
+                <div class="progress barre_chargement">
+                    <div class=" bg-danger progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 10%">10%</div>
+                </div>
+            </div>
+
+
+            <!--Php-->
+            <div class="col  ms-2">
+                <img src="assets/img/php.png" alt="logo php" title="logo php" class="rounded-3">
+                <div class="progress barre_chargement">
+                    <div class=" bg-danger progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 10%">10%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Section 3 carouselle-->
+
+
+    <div class="row d-lg-none">
+        <br>
+        <h2 class="text-danger text-center">Compétence</h2>
+        <div class="offset-2 col-8">
+            <!-- Carousel -->
+            <div id="section3" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#section3" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#section3" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#section3" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#section3" data-bs-slide-to="3"></button>
+                </div>
+
+                <div class="carousel-inner ">
+                    <div class="carousel-item active">
+                        <p class="text-white text-center">HTML/CSS</p>
+                        <img src="assets/img/html.png" alt="Los Angeles" class="d-block w-100 redim">
+
+                    </div>
+                    <div class="carousel-item">
+                        <p class="text-white text-center">Bootstrap</p>
+                        <img src="assets/img/bootstrap.png" alt="Chicago" class="d-block w-100 redim">
+                    </div>
+                    <div class="carousel-item">
+                        <p class="text-white text-center">Javascript</p>
+                        <img src="assets/img/javascript.png" alt="New York" class="d-block w-100 redim">
+                    </div>
+                    <div class="carousel-item">
+                        <p class="text-white text-center">Php</p>
+                        <img src="assets/img/php.png" alt="New York" class="d-block w-100 redim">
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#section3" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#section3" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!--fin de la section 3 carouselle-->
+
+    <!--Footer-->
+    <footer data-midnight="white">
+        <div class="container ">
+            <footer class="mt-5 my-4">
+                <ul class="nav justify-content-center border-bottom  ">
+                    <li class="nav-item"><a href="accueil.html" class="nav-link px-2 text-muted">Accueil</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contact</a></li>
+                    <li class="nav-item"><a href="cv papier/cv_version_black.pdf" download="cv"
+                            class="nav-link px-2 text-muted">CV papier</a></li>
+                    <li class="nav-item"><a href="https://www.linkedin.com/in/thomas-daurel-09437b236/"
+                            class="nav-link px-2 text-muted"><img src="assets/img/linkedin.png"></a></li>
+                </ul>
+                <p class="text-center text-muted">&copy; 2022 Daurel Thomas</p>
+            </footer>
+
+           
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+                crossorigin="anonymous"></script>
+
+</body>
+
+</html>

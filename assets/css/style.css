@@ -1,0 +1,36 @@
+body {
+    background-image: url(../img/fond1.jpg);
+    background-size: cover;
+}
+
+.background_nav {
+    background-color: #00000080;
+    
+}
+
+ul {
+    list-style-type: none;
+}
+
+@font-face {
+    font-family: 'Netflix';
+    src: url('../css/netflix.woff') format('woff'),
+}
+
+.police_netflix {
+    font-family: 'Netflix', Arial, serif;
+}
+
+.barre_chargement {
+    width: 97%;
+    height: 10px;
+}
+
+.redim {
+    max-width: 100%;
+    height: auto;
+}
+a:link 
+{ 
+ text-decoration:none; 
+} 

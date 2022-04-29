@@ -1,0 +1,52 @@
+body {
+    background-color: #141414;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 6;
+}
+
+.logo {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.div2 {
+    grid-area: 2 / 1 / 6 / 6;
+    display : flex;
+    flex-direction :column;
+    align-items: center;
+    justify-content: center;
+}
+
+.div2 h2
+{
+    color : white;
+    font-size : 3.4em;
+    margin-top : 110px;
+}
+
+.avatar{
+    border-radius: 10px;
+}
+
+.div2 p{
+    color : #b3b3b3;
+    font-size : 1.2em;
+    margin-top : 5px;
+}
+
+a:hover {
+    border: 2px solid white;
+    border-radius: 10px;
+    }
+
+    
